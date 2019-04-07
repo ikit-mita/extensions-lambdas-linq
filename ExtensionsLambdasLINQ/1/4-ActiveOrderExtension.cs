@@ -9,6 +9,7 @@ namespace ExtensionsLambdasLINQ.ActiveOrderExtension
 
     public class User
     {
+        private string _key = $"{System.DateTime.Now.Millisecond}";
         public Order Order { get; set; }
         // other properties and methods
     }
@@ -18,6 +19,7 @@ namespace ExtensionsLambdasLINQ.ActiveOrderExtension
     {
         public static bool HasActiveOrder(this User user)
         {
+            // var key = user._key; // Error CS0122  'User._key' is inaccessible due to its protection level
             return user.Order != null && user.Order.IsActive;
         }
     }
