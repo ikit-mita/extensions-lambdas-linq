@@ -6,9 +6,4 @@
     <RootNamespace>ExtensionsLambdasLINQ</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="3\" />
-    <Folder Include="4\" />
-  </ItemGroup>
-
 </Project>
